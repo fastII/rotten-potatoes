@@ -41,7 +41,7 @@ kind: Deployment
 metadata:
   name: web
 spec: 
-  replicas: 10
+  replicas: 2
   selector:
     matchLabels:
       app: web
@@ -52,7 +52,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: fabricioveronez/rotten-potatoes:v1
+          image: fastii/rotten-potatoes:v1
           ports: 
             - containerPort: 5000
           env: 
